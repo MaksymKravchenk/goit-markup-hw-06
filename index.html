@@ -187,28 +187,28 @@
               <h3 class="name-team">Mark Guerrero</h3>
               <p class="team-position">Product Designer</p>
               <ul class="social-links-list">
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -217,6 +217,7 @@
                 </li>
               </ul>
             </li>
+
             <li class="team-item">
               <img
                 class="foto-team"
@@ -227,14 +228,14 @@
               <h3 class="name-team">Tom Ford</h3>
               <p class="team-position">Frontend Developer</p>
               <ul class="social-links-list">
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use
@@ -245,14 +246,14 @@
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -271,7 +272,7 @@
               <h3 class="name-team">Camila Garcia</h3>
               <p class="team-position">Marketing</p>
               <ul class="social-links-list">
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
@@ -285,14 +286,14 @@
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -312,28 +313,28 @@
               <h3 class="name-team">Daniel Wilson</h3>
               <p class="team-position">UI Designer</p>
               <ul class="social-links-list">
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
-                <li social-links-item>
+                <li class="social-links-item">
                   <a href="#" class="social-links">
                     <svg class="social-links-svg">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -481,10 +482,13 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal-title">
-          Leave your contacts and we will call you back
-        </h2>
-        <form name="contact-form" autocomplete="on" novalidate>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form
+          class="contact-form"
+          name="contact-form"
+          autocomplete="on"
+          novalidate
+        >
           <label class="form-label"
             >Name
 
@@ -500,12 +504,12 @@
             </svg>
           </label>
           <label class="form-label"
-            >email
+            >Email
             <input class="form-input" type="email" name="email" />
             <svg class="modal-svg">
               <use href="./images/icons.svg#icon-email-icon"></use></svg
           ></label>
-          <label class="form-label" for="user-comment"
+          <label class="form-label comment-label" for="user-comment"
             >Comment
             <textarea
               class="comment-form"
@@ -522,9 +526,8 @@
               <a href="" class="checkbox-link">Privacy Policy</a>
             </label>
           </div>
-          <div class="checkbox-button-container">
-            <button type="submit" class="checkbox-button">Send</button>
-          </div>
+
+          <button type="submit" class="checkbox-button">Send</button>
         </form>
       </div>
     </div>

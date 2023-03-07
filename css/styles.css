@@ -1,7 +1,4 @@
-
-
-
-:root {
+:root{
     --color-brand:#4D5AE5;
     --color-pressed-state:#404BBF;
     --color-primary: #2E2F42;
@@ -13,13 +10,13 @@
     --color-modal-icon:#8E8F99;
 }
 
-ul {
-  list-style-type: none;
+ul{
+  list-style-type:none;
   margin: 0;
   padding: 0;
 }
- ul {
-   list-style-type: none;
+ ul{
+   list-style-type:none;
  }
   
 
@@ -30,17 +27,17 @@ ul {
   h4,
   h5,
  h6 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top:0;
+  margin-bottom:0;
 }
 
 
 body{
 
-    color: var(--color-text);
+    color:var(--color-text);
     background-color:var(--color-white) ;
     font-family: roboto, sans-serif;
-    font-size: 16px;
+    font-size:16px;
    
     /* отступы для 3х секций */
 }
@@ -48,23 +45,23 @@ body{
 
 
 .section{         
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top:120px;
+  padding-bottom:120px;
 }
 /* header nav+header adress */
-.container {
-  width: 100%;
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+.container{
+  width:100%;
+  max-width:1158px;
+  margin:0 auto;
+  padding:0 15px;
 }
 
 
 
 
 .header-container{
-  display: flex;
-  align-items: center;
+  display:flex;
+  align-items:center;
   
 }
 .nav-header{
@@ -73,39 +70,39 @@ body{
   
 }
 .header-list{
-  display: flex;
-  position: relative;
+  display:flex;
+  position:relative;
   gap: 40px;
-  margin-left: 76px;
+  margin-left:76px;
 
     
 }
 
 
 .header-contacts{
-  margin-left: auto;
+  margin-left:auto;
 
 }
 .adress-list{
-  display: flex;
-  gap: 40px;
+  display:flex;
+  gap:40px;
 }
 
 
-.header {
+.header{
   border-bottom: 1px solid #E7E9FC ;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.logo {
+.logo{
     color: var(--color-primary);
-    font-family: raleway, sans-serif;
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 1.33;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-        text-transform: uppercase;
+    font-family:raleway, sans-serif;
+        font-size:18px;
+        font-weight:800;
+        line-height:1.33;
+        letter-spacing:0.03em;
+        text-decoration:none;
+        text-transform:uppercase;
         padding: 24px 0;
        
 
@@ -829,7 +826,8 @@ padding-top: 0;
             top: 50%;
             width: 408px;
             height: 576px;   
-            padding: 24px;         
+            padding: 24px;  
+            padding-top: 72px;       
             transform: translate(-50%, -50%) scale(1);
             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
           background-color: #FCFCFC;
@@ -885,19 +883,26 @@ padding-top: 0;
                 line-height: 1.5;
         }
 
+       
+
         .form-label{
           position: relative;
             display: block;
             width: 100%;
             text-align: left;
-            margin-top: 4px;
-            margin-bottom: 8px;
+            padding-bottom: 8px;
+           
             font-size: 12px;
             letter-spacing: 0.04em;
             line-height: 1.3333;
             color: var(--color-modal-icon);
+            
         }
 
+        .comment-label{
+          padding-bottom: 16px;
+        }
+                
         .form-input{
           display: block;
             width: 100%;
@@ -906,12 +911,18 @@ padding-top: 0;
             border-radius: 4px;
             color: var(--color-primary);
             padding: 11px 38px;
-            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         }
 
-        .form-label:hover .modal-svg,
-        .form-label:focus .modal-svg{
-          fill: var(--color-brand);
+        
+        .form-label:focus .form-input{                         
+          border: 1px solid var(--color-brand);
+          }
+            
+        
+
+        .form-label:focus-within .modal-svg{
+          fill:var(--color-brand);
         }
 
         .comment-form{
@@ -969,30 +980,29 @@ padding-top: 0;
                     font-weight: 400;
                     line-height: 1.3333;
                     letter-spacing: 0.04em;
-            }
+            }                      
 
-            .checkbox-button-container{
-            display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-top: 24px;
-
-            }
+           
 
             .checkbox-button{
-                  display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 169px;
-                    height: 56px;
-                    padding: 0;
-                    color: var(--color-white);
-                    background: var(--color-brand);
-                    border: transparent;
-                    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-                    border-radius: 4px;
-                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+              display: block;
+              margin-top: 24px;
+              margin-left: auto;
+              margin-right: auto;
+             
+
+              width: 169px;
+                height: 56px;
+                padding: 0;
+                color: var(--color-white);
+                background: var(--color-brand);
+                border: transparent;
+                box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+                border-radius: 4px;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
             }
+
+
 
             .checkbox-button:focus,
             .checkbox-button:hover {
@@ -1001,7 +1011,7 @@ padding-top: 0;
               background-color: var(--color-pressed-state);
             }
 
-            .checkbox:checked+.checkbox-icon{
+            .checkbox:checked +.checkbox-icon{
               background-color: var(--color-pressed-state);
                 background-image: url(../images/checkbox.svg);
                 background-size: contain;
@@ -1022,9 +1032,9 @@ padding-top: 0;
         }
 
         .modal-svg{
-          display: inline-block;
-        position: absolute;
-        top: 50%;
+          display: inline-block;         
+        position: absolute;        
+        top: 40%;
         left: 16px;
         transform: translateY(-10%);
             width: 18px;
