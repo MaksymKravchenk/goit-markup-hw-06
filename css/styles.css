@@ -890,7 +890,7 @@ padding-top: 0;
             display: block;
             width: 100%;
             text-align: left;
-            padding-bottom: 8px;
+            padding-bottom: 4px;
            
             font-size: 12px;
             letter-spacing: 0.04em;
@@ -899,9 +899,7 @@ padding-top: 0;
             
         }
 
-        .comment-label{
-          padding-bottom: 16px;
-        }
+        
                 
         .form-input{
           display: block;
@@ -911,17 +909,18 @@ padding-top: 0;
             border-radius: 4px;
             color: var(--color-primary);
             padding: 11px 38px;
+            outline: none;
             transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         }
 
         
-        .form-label:focus .form-input{                         
+        .form-label:focus-within .form-input, .form-label:hover .form-input{                         
           border: 1px solid var(--color-brand);
           }
             
         
 
-        .form-label:focus-within .modal-svg{
+        .form-label:focus-within .modal-svg,  .form-label:hover .modal-svg{
           fill:var(--color-brand);
         }
 
@@ -930,11 +929,22 @@ padding-top: 0;
                 resize: none;
                 width: 100%;
                 height: 120px;
-                padding: 8px 16px;
-                margin-top: 4px;
+                
+              
                 color: var(--color-primary);
                 border: 1px solid rgba(33, 33, 33, 0.2);
                 border-radius: 4px;
+                outline: none;
+        }
+
+        
+            .comment-label:focus-within .comment-form, .comment-label:hover .comment-form  {
+           border: 1px solid var(--color-brand);
+         }
+
+       
+        .comment-form::placeholder {
+          color: rgba(117, 117, 117, 0.5);
         }
 
         .checkbox-container {
@@ -947,7 +957,8 @@ padding-top: 0;
         .form-checkbox{
           display: inline-flex;
             align-items: center;
-            font-size: 12px;        
+            font-size: 12px; 
+            margin-top: 16px;       
            
             line-height: 1.3333;
             letter-spacing: 0.04em;
@@ -989,6 +1000,11 @@ padding-top: 0;
               margin-top: 24px;
               margin-left: auto;
               margin-right: auto;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 1.5;
+              letter-spacing: 0.04em;
+              cursor: pointer;
              
 
               width: 169px;
@@ -1014,22 +1030,14 @@ padding-top: 0;
             .checkbox:checked +.checkbox-icon{
               background-color: var(--color-pressed-state);
                 background-image: url(../images/checkbox.svg);
-                background-size: contain;
+                background-size: 10px 8px;
                 background-origin: border-box;
+                background-repeat: no-repeat;
+                background-position: center;
                 border: transparent;
             }
 
-        .comment-form{
-          Display: block;
-            resize: none;
-            width: 100%;
-            height: 120px;
-            padding: 8px 16px;
-            margin-top: 4px;
-            color: var(--color-primary);
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            border-radius: 4px;
-        }
+     
 
         .modal-svg{
           display: inline-block;         
